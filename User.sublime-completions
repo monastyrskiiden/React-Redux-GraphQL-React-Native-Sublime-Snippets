@@ -1,0 +1,610 @@
+{
+  "scope":"source.js - variable.other.js",
+  "completions":[
+    "js",
+    {
+      "trigger":"imp",
+      "contents":"import ${2:moduleName} from '${1:module}'$0"
+    },
+    {
+      "trigger":"imn",
+      "contents":"import '${1:module}'$0"
+    },
+    {
+      "trigger":"imd",
+      "contents":"import { $2 } from '${1:module}'$0"
+    },
+    {
+      "trigger":"ime",
+      "contents":"import * as ${2:alias} from '${1:module}'$0"
+    },
+    {
+      "trigger":"ima",
+      "contents":"import { ${2:originalName} as ${3:alias} } from '${1:module}'$0"
+    },
+    {
+      "trigger":"exp",
+      "contents":"export default $1$0"
+    },
+    {
+      "trigger":"exd",
+      "contents":"export { $2 } from '${1:module}'$0"
+    },
+    {
+      "trigger":"exa",
+      "contents":"export { ${2:originalName} as ${3:alias} } from '${1:module}'$0"
+    },
+    {
+      "trigger":"enf",
+      "contents":"export const ${1:functionName} = (${2:params}) => {\n\t$0\n}"
+    },
+    {
+      "trigger":"edf",
+      "contents":"export default (${1:params}) => {\n\t$0\n}"
+    },
+    {
+      "trigger":"met",
+      "contents":"${1:methodName} = (${2:params}) => {\n\t${0}\n}"
+    },
+    {
+      "trigger":"pge",
+      "contents":"get ${1:propertyName}() {\n\treturn this.${0}\n}"
+    },
+    {
+      "trigger":"pse",
+      "contents":"set ${1:propertyName}(${2:value}) {\n\t${0}\n}"
+    },
+    {
+      "trigger":"fre",
+      "contents":"${1:array}.forEach(${2:currentItem} => {\n\t${0}\n})"
+    },
+    {
+      "trigger":"fof",
+      "contents":"for(let ${1:item} of ${2:object}) {\n\t${0}\n}"
+    },
+    {
+      "trigger":"fin",
+      "contents":"for(let ${1:item} in ${2:object}) {\n\t${0}\n}"
+    },
+    {
+      "trigger":"anfn",
+      "contents":"(${1:params}) => {\n\t${2}\n}"
+    },
+    {
+      "trigger":"nfn",
+      "contents":"const ${1:name} = (${2:params}) => {\n\t${3}\n}"
+    },
+    {
+      "trigger":"dob",
+      "contents":"const {${1:propertyName}} = ${2:objectToDestruct};"
+    },
+    {
+      "trigger":"dar",
+      "contents":"const [${1:propertyName}] = ${2:arrayToDestruct};"
+    },
+    {
+      "trigger":"sti",
+      "contents":"setInterval(() => {\n\t${2}\n}, ${0:intervalInms})"
+    },
+    {
+      "trigger":"sto",
+      "contents":"setTimeout(() => {\n\t${2}\n}, ${1:delayInms})"
+    },
+    {
+      "trigger":"prom",
+      "contents":"return new Promise((resolve, reject) => {\n\t${1}\n})"
+    },
+    {
+      "trigger":"cas",
+      "contents":"console.assert(${1:expression}, ${2:object});"
+    },
+    {
+      "trigger":"ccl",
+      "contents":"console.clear();"
+    },
+    {
+      "trigger":"cco",
+      "contents":"console.count(${1:label});"
+    },
+    {
+      "trigger":"cdi",
+      "contents":"console.dir(${1:object});"
+    },
+    {
+      "trigger":"cer",
+      "contents":"console.error(${1:object});"
+    },
+    {
+      "trigger":"cgr",
+      "contents":"console.group(\"${1:label}\");"
+    },
+    {
+      "trigger":"cge",
+      "contents":"console.groupEnd();"
+    },
+    {
+      "trigger":"clg",
+      "contents":"console.log(${1:object});"
+    },
+    {
+      "trigger":"ctr",
+      "contents":"console.trace(${1:object});"
+    },
+    {
+      "trigger":"clo",
+      "contents":"console.log('${1:object}', ${1:object});"
+    },
+    {
+      "trigger":"ctm",
+      "contents":"console.time('${1:object}');"
+    },
+    {
+      "trigger":"cte",
+      "contents":"console.timeEnd('${1:object}');"
+    },
+    {
+      "trigger":"cwa",
+      "contents":"console.warn(${1:object});"
+    },
+    {
+      "trigger":"cin",
+      "contents":"console.info(${1:object});"
+    },
+    {
+      "trigger":"cp",
+      "contents":"const { $1 } = this.props;"
+    },
+    {
+      "trigger":"cs",
+      "contents":"const { $1 } = this.state;"
+    },
+    {
+      "trigger":"imr",
+      "contents":"import React from 'react';"
+    },
+    {
+      "trigger":"imrd",
+      "contents":"import ReactDOM from 'react-dom';"
+    },
+    {
+      "trigger":"imrc",
+      "contents":"import React, { Component } from 'react';"
+    },
+    {
+      "trigger":"imrcp",
+      "contents":"import React, { Component } from 'react';\nimport PropTypes from 'prop-types';"
+    },
+    {
+      "trigger":"imrpc",
+      "contents":"import React, { PureComponent } from 'react';"
+    },
+    {
+      "trigger":"imrpcp",
+      "contents":"import React, { PureComponent } from 'react';\nimport PropTypes from 'prop-types';"
+    },
+    {
+      "trigger":"imrm",
+      "contents":"import React, { memo } from 'react';"
+    },
+    {
+      "trigger":"imrmp",
+      "contents":"import React, { memo } from 'react';\nimport PropTypes from 'prop-types';"
+    },
+    {
+      "trigger":"impt",
+      "contents":"import PropTypes from 'prop-types';"
+    },
+    {
+      "trigger":"imrr",
+      "contents":"import { BrowserRouter as Router, Route, Link } from 'react-router-dom';"
+    },
+    {
+      "trigger":"redux",
+      "contents":"import { connect } from 'react-redux';"
+    },
+    {
+      "trigger":"rcc",
+      "contents":"import React, { Component } from 'react';\n\nexport default class ${1:${TM_FILENAME_BASE}} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t)\n\t}\n}"
+    },
+    {
+      "trigger":"rce",
+      "contents":"import React, { Component } from 'react';\n\nexport class ${1:${TM_FILENAME_BASE}} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t)\n\t}\n}\nexport default ${1:${TM_FILENAME_BASE}};"
+    },
+    {
+      "trigger":"rfce",
+      "contents":"import React from 'react';\n\nfunction ${1:${TM_FILENAME_BASE}}() {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t)\n}\nexport default ${1:${TM_FILENAME_BASE}};"
+    },
+    {
+      "trigger":"rfc",
+      "contents":"import React from 'react';\n\nexport default function ${1:${TM_FILENAME_BASE}}() {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t)\n}"
+    },
+    {
+      "trigger":"rfcp",
+      "contents":"import React from 'react';\nimport PropTypes from 'prop-types';\n\nfunction ${1:${TM_FILENAME_BASE}}(props) {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t)\n}\n\n${1:${TM_FILENAME_BASE}}.propTypes = {}\n\nexport default ${1:${TM_FILENAME_BASE}};"
+    },
+    {
+      "trigger":"rafc",
+      "contents":"import React from 'react';\n\nconst ${1:${TM_FILENAME_BASE}} = () => {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t)\n}\n\nexport default ${1:${TM_FILENAME_BASE}};"
+    },
+    {
+      "trigger":"rafce",
+      "contents":"import React from 'react';\n\nconst ${1:${TM_FILENAME_BASE}} = () => {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t)\n}\n\nexport default ${1:${TM_FILENAME_BASE}};"
+    },
+    {
+      "trigger":"rafcp",
+      "contents":"import React from 'react';\nimport PropTypes from 'prop-types';\n\nconst ${1:${TM_FILENAME_BASE}} = props => {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t)\n}\n\n${1:${TM_FILENAME_BASE}}.propTypes = {};\n\nexport default ${1:${TM_FILENAME_BASE}};"
+    },
+    {
+      "trigger":"rcep",
+      "contents":"import React, { Component } from 'react';\nimport PropTypes from 'prop-types';\n\nexport class ${1:${TM_FILENAME_BASE}} extends Component {\n\tstatic propTypes = {}\n\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t)\n\t}\n}\n\nexport default ${1:${TM_FILENAME_BASE}};"
+    },
+    {
+      "trigger":"rpc",
+      "contents":"import React, { PureComponent } from 'react';\n\nexport default class ${1:${TM_FILENAME_BASE}} extends PureComponent {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t)\n\t}\n}"
+    },
+    {
+      "trigger":"rpce",
+      "contents":"import React, { PureComponent } from 'react';\n\nexport class ${1:${TM_FILENAME_BASE}} extends PureComponent {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t)\n\t}\n}\n\nexport default ${1:$TM_FILENAME_BASE};"
+    },
+    {
+      "trigger":"rpcp",
+      "contents":"import React, { PureComponent } from 'react';\nimport PropTypes from 'prop-types';\n\nexport default class ${1:${TM_FILENAME_BASE}} extends PureComponent {\n\tstatic propTypes = {}\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t)\n\t}\n}"
+    },
+    {
+      "trigger":"rmc",
+      "contents":"import React, { memo } from 'react';\n\nexport default memo(function ${1:${TM_FILENAME_BASE}}() {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t)\n})"
+    },
+    {
+      "trigger":"rmcp",
+      "contents":"import React, { memo } from 'react';\nimport PropTypes from 'prop-types';\n\nconst ${1:${TM_FILENAME_BASE}} = memo(function ${1:${TM_FILENAME_BASE}}(props) {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t)\n})\n\n${1:${TM_FILENAME_BASE}}.propTypes = {};\n\nexport default ${1:${TM_FILENAME_BASE}};"
+    },
+    {
+      "trigger":"rccp",
+      "contents":"import React, { Component } from 'react';\nimport PropTypes from 'prop-types';\n\nexport default class ${1:${TM_FILENAME_BASE}} extends Component {\n\tstatic propTypes = {\n\t\t${2:prop}: ${3:PropTypes}\n\t}\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t)\n\t}\n}"
+    },
+    {
+      "trigger":"rcredux",
+      "contents":"import React, { Component } from 'react';\nimport PropTypes from 'prop-types';\nimport { connect } from 'react-redux';\n\nexport class ${1:${TM_FILENAME_BASE}} extends Component {\n\tstatic propTypes = {\n\t\t${2:prop}: ${3:PropTypes}\n\t}render() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t)\n\t}\n}\n\nconst mapStateToProps = (state) => ({});\n\nconst mapDispatchToProps = {};\n\nexport default connect(mapStateToProps, mapDispatchToProps)(${1:${TM_FILENAME_BASE}});"
+    },
+    {
+      "trigger":"reduxmap",
+      "contents":"const mapStateToProps = (state) => ({\n\t${1}\n});\n\nconst mapDispatchToProps = {\n\t${2}\n};${0}"
+    },
+    {
+      "trigger":"rconst",
+      "contents":"constructor(props) {\n\tsuper(props);\n\tthis.state = {\n\t\t$0\n\t}\n}"
+    },
+    {
+      "trigger":"est",
+      "contents":"state = {\n\t$1\n}"
+    },
+    {
+      "trigger":"cwm",
+      "contents":"componentWillMount = () => {\n\t$0\n}"
+    },
+    {
+      "trigger":"cdm",
+      "contents":"componentDidMount = () => {\n\t$0\n}"
+    },
+    {
+      "trigger":"cwr",
+      "contents":"componentWillReceiveProps = (nextProps) => {\n\t$0\n}"
+    },
+    {
+      "trigger":"scu",
+      "contents":"shouldComponentUpdate = (nextProps, nextState) => {\n\t$0\n}"
+    },
+    {
+      "trigger":"cwup",
+      "contents":"componentWillUpdate = (nextProps, nextState) => {\n\t$0\n}"
+    },
+    {
+      "trigger":"cdup",
+      "contents":"componentDidUpdate = (prevProps, prevState) => {\n\t$0\n}"
+    },
+    {
+      "trigger":"cwun",
+      "contents":"componentWillUnmount = () => {\n\t$0\n}"
+    },
+    {
+      "trigger":"gdsfp",
+      "contents":"static getDerivedStateFromProps(props, state) {\n\t${1}\n}"
+    },
+    {
+      "trigger":"gsbu",
+      "contents":"getSnapshotBeforeUpdate = (prevProps, prevState) => {\n\t$0\n}"
+    },
+    {
+      "trigger":"ren",
+      "contents":"render() {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t)\n}"
+    },
+    {
+      "trigger":"rcontext",
+      "contents":"const ${1:contextName} = React.createContext();"
+    },
+    {
+      "trigger":"cref",
+      "contents":"this.${1:refName}Ref = React.createRef();"
+    },
+    {
+      "trigger":"fref",
+      "contents":"const ref = React.createRef();"
+    },
+    {
+      "trigger":"sst",
+      "contents":"this.setState({$0});"
+    },
+    {
+      "trigger":"ssf",
+      "contents":"this.setState((state, props) => { return { $0 }});"
+    },
+    {
+      "trigger":"props",
+      "contents":"this.props.$0;"
+    },
+    {
+      "trigger":"state",
+      "contents":"this.state.$0;"
+    },
+    {
+      "trigger":"bnd",
+      "contents":"this.${1:methodName} = this.${1:methodName}.bind(this)$0;"
+    },
+    {
+      "trigger":"rxaction",
+      "contents":"export const ${1:actionName} = (payload) => ({\n\ttype: ${2:type},\n\tpayload: ${3:payload}\n})"
+    },
+    {
+      "trigger":"rxconst",
+      "contents":"export const ${1:constantName} = '${1:constantName}';"
+    },
+    {
+      "trigger":"rxreducer",
+      "contents":"const initialState = {\n}\n\nexport default (state = initialState, { type, payload }) => {\n\tswitch (type) {\n\t\tcase ${1:typeName}:\n\t\treturn { ...state, ...payload }\n\tdefault:\n\t\treturn state;\n\t}\n}"
+    },
+    {
+      "trigger":"rxselect",
+      "contents":"import { createSelector } from 'reselect';\n\nexport const ${1:selectorName} = state => state.${2:selector}"
+    },
+    {
+      "trigger":"rnc",
+      "contents":"import React, { Component } from 'react';\nimport { Text, View } from 'react-native';\n\nexport default class ${1:${TM_FILENAME_BASE}} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<View>\n\t\t\t\t<Text> ${2:textInComponent} </Text>\n\t\t\t</View>\n\t\t)\n\t}\n}"
+    },
+    {
+      "trigger":"rncs",
+      "contents":"import React, { Component } from 'react';\nimport { Text, StyleSheet, View } from 'react-native';\n\nexport default class ${1:${TM_FILENAME_BASE}} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<View>\n\t\t\t\t<Text> ${2:textInComponent} </Text>\n\t\t\t</View>\n\t\t)\n\t}\n}\n\nconst styles = StyleSheet.create({});"
+    },
+    {
+      "trigger":"rnce",
+      "contents":"import React, { Component } from 'react';\nimport { Text, View } from 'react-native';\n\nexport class ${1:${TM_FILENAME_BASE}} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<View>\n\t\t\t\t<Text> ${2:textInComponent} </Text>\n\t\t\t</View>\n\t\t)\n\t}\n}\n\nexport default ${1:${TM_FILENAME_BASE}};"
+    },
+    {
+      "trigger":"rnpc",
+      "contents":"import React, { PureComponent } from 'react';\nimport { Text, View } from 'react-native';\n\nexport default class ${1:${TM_FILENAME_BASE}} extends PureComponent {\n\trender() {\n\t\treturn (\n\t\t\t<View>\n\t\t\t\t<Text> ${2:textInComponent} </Text>\n\t\t\t</View>\n\t\t)\n\t}\n}"
+    },
+    {
+      "trigger":"rnpce",
+      "contents":"import React, { PureComponent } from 'react';\nimport { Text, View } from 'react-native';\nexport class ${1:${TM_FILENAME_BASE}} extends PureComponent {\n\trender() {\n\t\treturn (\n\t\t\t<View>\n\t\t\t\t<Text> ${2:textInComponent} </Text>\n\t\t\t</View>\n\t\t)\n\t}\n}\n\nexport default ${1:${TM_FILENAME_BASE}};"
+    },
+    {
+      "trigger":"rncredux",
+      "contents":"import React, { Component } from 'react';\nimport { View, Text } from 'react-native';\nimport PropTypes from 'prop-types';\nimport { connect } from 'react-redux';\nexport class ${1:${TM_FILENAME_BASE}} extends Component {\n\tstatic propTypes = {\n\t\t${2:prop}: ${3:PropTypes}\n\t}\n\trender() {\n\t\treturn (\n\t\t\t<View>\n\t\t\t\t<Text> ${2:textInComponent} </Text>\n\t\t\t</View>\n\t\t)\n\t}\n}\n\nconst mapStateToProps = (state) => ({});\n\nconst mapDispatchToProps = {}\n\nexport default connect(mapStateToProps, mapDispatchToProps)(${1:${TM_FILENAME_BASE}});"
+    },
+    {
+      "trigger":"imrn",
+      "contents":"import { ${1:moduleName} } from 'react-native';"
+    },
+    {
+      "trigger":"rnstyle",
+      "contents":"const styles = StyleSheet.create({\n\t${1:style}\n})"
+    },
+    {
+      "trigger":"pta",
+      "contents":"PropTypes.array,"
+    },
+    {
+      "trigger":"ptar",
+      "contents":"PropTypes.array.isRequired,"
+    },
+    {
+      "trigger":"ptb",
+      "contents":"PropTypes.bool,"
+    },
+    {
+      "trigger":"ptbr",
+      "contents":"PropTypes.bool.isRequired,"
+    },
+    {
+      "trigger":"ptf",
+      "contents":"PropTypes.func,"
+    },
+    {
+      "trigger":"ptfr",
+      "contents":"PropTypes.func.isRequired,"
+    },
+    {
+      "trigger":"ptn",
+      "contents":"PropTypes.number,"
+    },
+    {
+      "trigger":"ptnr",
+      "contents":"PropTypes.number.isRequired,"
+    },
+    {
+      "trigger":"pto",
+      "contents":"PropTypes.object,"
+    },
+    {
+      "trigger":"ptor",
+      "contents":"PropTypes.object.isRequired,"
+    },
+    {
+      "trigger":"pts",
+      "contents":"PropTypes.string,"
+    },
+    {
+      "trigger":"ptsr",
+      "contents":"PropTypes.string.isRequired,"
+    },
+    {
+      "trigger":"ptnd",
+      "contents":"PropTypes.node,"
+    },
+    {
+      "trigger":"ptndr",
+      "contents":"PropTypes.node.isRequired,"
+    },
+    {
+      "trigger":"ptel",
+      "contents":"PropTypes.element,"
+    },
+    {
+      "trigger":"ptelr",
+      "contents":"PropTypes.element.isRequired,"
+    },
+    {
+      "trigger":"pti",
+      "contents":"PropTypes.instanceOf($0),"
+    },
+    {
+      "trigger":"ptir",
+      "contents":"PropTypes.instanceOf($0).isRequired,"
+    },
+    {
+      "trigger":"pte",
+      "contents":"PropTypes.oneOf(['$0']),"
+    },
+    {
+      "trigger":"pter",
+      "contents":"PropTypes.oneOf(['$0']).isRequired,"
+    },
+    {
+      "trigger":"ptet",
+      "contents":"PropTypes.oneOfType([\n\t$0\n]),"
+    },
+    {
+      "trigger":"ptetr",
+      "contents":"PropTypes.oneOfType([\n\t$0\n]).isRequired,"
+    },
+    {
+      "trigger":"ptao",
+      "contents":"PropTypes.arrayOf($0),"
+    },
+    {
+      "trigger":"ptaor",
+      "contents":"PropTypes.arrayOf($0).isRequired,"
+    },
+    {
+      "trigger":"ptoo",
+      "contents":"PropTypes.objectOf($0),"
+    },
+    {
+      "trigger":"ptoor",
+      "contents":"PropTypes.objectOf($0).isRequired,"
+    },
+    {
+      "trigger":"ptsh",
+      "contents":"PropTypes.shape({\n\t$0\n}),"
+    },
+    {
+      "trigger":"ptshr",
+      "contents":"PropTypes.shape({\n\t$0\n}).isRequired,"
+    },
+    {
+      "trigger":"ptypes",
+      "contents":"static propTypes = {\n\t$0\n}"
+    },
+    {
+      "trigger":"ptany",
+      "contents":"PropTypes.any,"
+    },
+    {
+      "trigger":"cmmb",
+      "contents":"/**\n|--------------------------------------------------\n| $1\n|--------------------------------------------------\n*/"
+    },
+    {
+      "trigger":"desc",
+      "contents":"describe('$1', () => {\n\t$0\n})"
+    },
+    {
+      "trigger":"test",
+      "contents":"test('should $1', () => {\n\t$0\n})"
+    },
+    {
+      "trigger":"tit",
+      "contents":"it('should $1', () => {\n\t$0\n})"
+    },
+    {
+      "trigger":"stest",
+      "contents":"import React from 'react';\nimport renderer from 'react-test-renderer';\nimport { ${1:${TM_FILENAME_BASE}} } from '../${1:${TM_FILENAME_BASE}}'\n\ndescribe('<${1:${TM_FILENAME_BASE}} />', () => {\n\tconst defaultProps = {}\n\tconst wrapper = renderer.create(<${1:${TM_FILENAME_BASE}} {...defaultProps} />)\n\ttest('render', () => {\n\t\texpect(wrapper).toMatchSnapshot()\n\t})\n})"
+    },
+    {
+      "trigger":"sntest",
+      "contents":"import 'react-native';\nimport React from 'react';\nimport renderer from 'react-test-renderer';\nimport ${1:${TM_FILENAME_BASE}} from '../${1:${TM_FILENAME_BASE}}';\n\ndescribe('<${1:${TM_FILENAME_BASE}} />', () => {\n\tconst defaultProps = {}\n\tconst wrapper = renderer.create(<${1:${TM_FILENAME_BASE}} {...defaultProps} />)\n\ttest('render', () => {\n\t\texpect(wrapper).toMatchSnapshot()\n\t})\n})"
+    },
+    {
+      "trigger":"srtest",
+      "contents":"import React from 'react';\nimport renderer from 'react-test-renderer';\nimport { Provider } from 'react-redux';\nimport store from 'src/store';\nimport { ${1:${TM_FILENAME_BASE}} } from '../${1:${TM_FILENAME_BASE}}';\n\ndescribe('<${1:${TM_FILENAME_BASE}} />', () => {\n\tconst defaultProps = {}\n\tconst wrapper = renderer.create(\n\t\t<Provider store={store}>\n\t\t\t<${1:${TM_FILENAME_BASE}} {...defaultProps} />\n\t\t</Provider>\n\t)\n\ttest('render', () => {\n\t\texpect(wrapper).toMatchSnapshot()\n\t})\n})"
+    },
+    {
+      "trigger":"snrtest",
+      "contents":"import 'react-native';\nimport React from 'react';\nimport renderer from 'react-test-renderer';\nimport { Provider } from 'react-redux';\nimport store from 'src/store';\nimport ${1:${TM_FILENAME_BASE}} from '../${1:${TM_FILENAME_BASE}}';\n\ndescribe('<${1:${TM_FILENAME_BASE}} />', () => {\n\tconst defaultProps = {}\n\tconst wrapper = renderer.create(\n\t\t<Provider store={store}>\n\t\t\t<${1:${TM_FILENAME_BASE}} {...defaultProps} />\n\t\t</Provider>\n\t)\n\ttest('render', () => {\n\t\texpect(wrapper).toMatchSnapshot()\n\t})\n})"
+    },
+    {
+      "trigger":"graphql",
+      "contents":"import { compose, graphql } from 'react-apollo';"
+    },
+    {
+      "trigger":"expgql",
+      "contents":"export default compose(\n\tgraphql(${1:queryOrMutation}, { name: ${2:name} })\n\t)(${1:${TM_FILENAME_BASE}})"
+    },
+    {
+      "trigger":"hocredux",
+      "contents":"import React from 'react';\nimport PropTypes from 'prop-types';\nimport { connect } from 'react-redux';\n\nexport const mapStateToProps = state => ({});\n\nexport const mapDispatchToProps = {}\n\nexport const ${1:hocComponentName} = (WrappedComponent) => {\n\tconst hocComponent = ({ ...props }) => <WrappedComponent {...props} />\n\thocComponent.propTypes = {}\n\treturn hocComponent;\n}\n\nexport default WrapperComponent => connect(mapStateToProps, mapDispatchToProps)(${1:hocComponentName}(WrapperComponent));"
+    },
+    {
+      "trigger":"hoc",
+      "contents":"import React from 'react';\nimport PropTypes from 'prop-types';\nexport default (WrappedComponent) => {\n\tconst hocComponent = ({ ...props }) => <WrappedComponent {...props} />\n\thocComponent.propTypes = {}\n\treturn hocComponent;\n}"
+    },
+    {
+      "trigger":"useState",
+      "contents":"const [${1:state}, set${1/(.*)/${1:/capitalize}/}] = useState(${2:initialState});"
+    },
+    {
+      "trigger":"useEffect",
+      "contents":"useEffect(() => {\n\treturn () => {\n\t\t${1:effect}\n\t};\n}, [${2:input}]);"
+    },
+    {
+      "trigger":"useContext",
+      "contents":"const ${1:context} = useContext(${2:contextValue});"
+    },
+    {
+      "trigger":"useReducer",
+      "contents":"const [state, dispatch] = useReducer(${1:reducer}, ${2:initialState}, ${3:init});"
+    },
+    {
+      "trigger":"useCallback",
+      "contents":"useCallback(\n\t() => {\n\t\t${1:callback}\n\t},\n\t[${2:input}]\n)"
+    },
+    {
+      "trigger":"useMemo",
+      "contents":"useMemo(() => ${1:function}, ${2:input});"
+    },
+    {
+      "trigger":"useRef",
+      "contents":"const ${1:ref} = useRef(${2:initialValue});"
+    },
+    {
+      "trigger":"useImperativeHandle",
+      "contents":"useImperativeHandle(\n\t${1:ref},\n\t() => {\n\t\t${2:handler}\n\t},\n\t[${3:input}]\n)"
+    },
+    {
+      "trigger":"useDebugValue",
+      "contents":"useDebugValue(${1:value});"
+    },
+    {
+      "trigger":"useLayoutEffect",
+      "contents":"useLayoutEffect(() => {\n\treturn () => {\n\t\t${1:effect}\n\t},\n\t[${2:input}]\n})"
+    }
+  ]
+}
